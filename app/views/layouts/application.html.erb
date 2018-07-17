@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="component">
+        <!-- Start Nav Structure -->
+        <button class="cn-button" id="cn-button">+</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+              <li><a href="#"><span class="icon-picture"></span></a></li>
+              <li><a href="#"><span class="icon-headphones"></span></a></li>
+              <li><a href="#"><span class="icon-home"></span></a></li>
+              <li><a href="#"><span class="icon-facetime-video"></span></a></li>
+              <li><a href="#"><span class="icon-envelope-alt"></span></a></li>
+             </ul>
+        </div>
+        <div id="cn-overlay" class="cn-overlay"></div>
+        <!-- End Nav Structure -->
+      </div>
+    <%= yield %>
+  </body>
+</html>
